@@ -2,6 +2,72 @@
 <head>
 <script type='text/javascript' src='http://lrn.icstars.org/redball.js'></script>
 <script>
+function moveX()
+{
+rightdowndiagonal()
+rightdowndiagonal()
+rightdowndiagonal()
+rightdowndiagonal()
+rightdowndiagonal()
+rightdowndiagonal()
+rightdowndiagonal()
+rightdowndiagonal()
+rightdowndiagonal()
+rightdowndiagonal()
+rightdowndiagonal()
+rightdowndiagonal()
+rightdowndiagonal()
+rightdowndiagonal()
+rightdowndiagonal()
+rightdowndiagonal()
+rightdowndiagonal()
+rightdowndiagonal()
+rightdowndiagonal()
+rightdowndiagonal()
+
+leftupdiagonal()
+leftupdiagonal()
+leftupdiagonal()
+leftupdiagonal()
+leftupdiagonal()
+leftupdiagonal()
+leftupdiagonal()
+leftupdiagonal()
+leftupdiagonal()
+leftupdiagonal()
+
+rightupdiagonal()
+rightupdiagonal()
+rightupdiagonal()
+rightupdiagonal()
+rightupdiagonal()
+rightupdiagonal()
+rightupdiagonal()
+rightupdiagonal()
+rightupdiagonal()
+rightupdiagonal()
+
+leftdowndiagonal()
+leftdowndiagonal()
+leftdowndiagonal()
+leftdowndiagonal()
+leftdowndiagonal()
+leftdowndiagonal()
+leftdowndiagonal()
+leftdowndiagonal()
+leftdowndiagonal()
+leftdowndiagonal()
+leftdowndiagonal()
+leftdowndiagonal()
+leftdowndiagonal()
+leftdowndiagonal()
+leftdowndiagonal()
+leftdowndiagonal()
+leftdowndiagonal()
+leftdowndiagonal()
+leftdowndiagonal()
+leftdowndiagonal()
+}
 function moveup()
 {
 redball.top=redball.top-15;
@@ -128,7 +194,8 @@ function leftdowndiagonal()
 moveleft();
 movedown();
 }
-function moveup10(){
+function moveup10()
+{
 	for(var i = 1; i<=10; i ++){
 		moveup();
 }
@@ -148,6 +215,7 @@ function moveup10(){
 	<button onclick="leftdowndiagonal()">$LEFTDOWN$</button>
 	<button onclick="leftdowndiagonal()">$LEFTDOWN$</button>
 	<button onclick="moveup10()">$MOVE UP 10$</button>
+	<button onclick="moveX()">$X$</button>
 	<table style=position: center>
 		<tr>
 			<td><button onclick="leftupdiagonal()"><img src="redball1-005.jpg" id=redball height="87px" width="87px" /></button></td>
