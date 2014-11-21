@@ -1,0 +1,169 @@
+<html>
+<head>
+<script type='text/javascript' src='http://lrn.icstars.org/redball.js'></script>
+<script>
+function moveup()
+{
+redball.top=redball.top-15;
+}
+function movedown()
+{
+redball.top=redball.top+15;
+}
+function moveleft()
+{
+redball.left=redball.left-15;
+}
+function moveright()
+{
+redball.left=redball.left+15;
+}
+function movesquare()
+{
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+
+moveup()
+moveleft()
+moveup()
+moveleft()
+moveup()
+moveleft()
+moveup()
+moveleft()
+moveup()
+moveleft()
+
+moveup()
+moveup()
+moveup()
+moveup()
+moveup()
+moveup()
+moveup()
+moveup()
+moveup()
+moveup()
+
+moveright()
+moveup()
+moveright()
+moveup()
+moveright()
+moveup()
+moveright()
+moveup()
+moveright()
+moveup()
+
+moveright()
+moveright()
+moveright()
+moveright()
+moveright()
+moveright()
+moveright()
+moveright()
+moveright()
+moveright()
+
+movedown()
+moveright()
+movedown()
+moveright()
+movedown()
+moveright()
+movedown()
+moveright()
+movedown()
+moveright()
+
+movedown()
+movedown()
+movedown()
+movedown()
+movedown()
+movedown()
+movedown()
+movedown()
+movedown()
+movedown()
+
+moveleft()
+movedown()
+moveleft()
+movedown()
+moveleft()
+movedown()
+moveleft()
+movedown()
+moveleft()
+movedown()         
+}
+function rightupdiagonal()
+{
+moveright();
+moveup();
+}
+function rightdowndiagonal()
+{
+moveright();
+movedown();
+}
+function leftupdiagonal()
+{
+moveup();
+moveleft();
+}
+function leftdowndiagonal()
+{
+moveleft();
+movedown();
+}
+function moveup10(){
+	for(var i = 1; i<=10; i ++){
+		moveup();
+}
+}
+</script>
+</head>
+	<body>
+		<img src="redball.jpg" id=redball />
+	<button onclick="moveup()">$UP$</button>
+	<button onclick="movedown()">$DOWN$</button>
+	<button onclick="moveleft()">$LEFT$</button>
+	<button onclick="moveright()">$RIGHT$</button>
+	<button onclick="movesquare()">$SQUARE$</button>
+	<button onclick="rightupdiagonal()">$RIGHTUP$</button>
+	<button onclick="rightdowndiagonal()">$RIGHTDOWN$</button>
+	<button onclick="leftupdiagonal()">$LEFTUP$</button>
+	<button onclick="leftdowndiagonal()">$LEFTDOWN$</button>
+	<button onclick="leftdowndiagonal()">$LEFTDOWN$</button>
+	<button onclick="moveup10()">$MOVE UP 10$</button>
+	<table style=position: center>
+		<tr>
+			<td><button onclick="leftupdiagonal()"><img src="redball1-005.jpg" id=redball height="87px" width="87px" /></button></td>
+			<td><button onclick="moveup()"><img src="redball1-001.jpg" id=redball height="87px" width="87px" /></button></td>
+			<td><button onclick="rightupdiagonal()"><img src="redball1-006.jpg" id=redball height="87px" width="87px" /></button></td>
+		</tr>
+		<tr>
+			<td><button onclick="moveleft()"><img src="redball1-004.jpg" id=redball height="87px" width="87px" /></button></td>
+			<td><button onclick="movesquare()"> <img src="10561621_10154400181185641_4743025398192767883_n.jpg" id=redball height="87px" width="87px" /></button></td>
+			<td><button onclick="moveright()"><img src="redball1-002.jpg" id=redball height="87px" width="87px" /></button></td>
+		</tr>
+		<tr>
+			<td><button onclick="leftdowndiagonal()"><img src="redball1-008.jpg" id=redball height="87px" width="87px" /></button></td>
+			<td><button onclick="movedown()"><img src="redball1-003.jpg" id=redball height="87px" width="87px" /></button></td>
+			<td><button onclick="rightdowndiagonal()"><img src="redball1-007.jpg" id=redball height="87px" width="87px" /></button></td>
+		</tr>
+	</table>
+	</body>
+</html>
